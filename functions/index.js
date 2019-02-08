@@ -13,6 +13,7 @@ exports.sendProximityNotification = functions.firestore.document(`/sighting/{sig
       notification: {
         title: 'New sighting in your area.',
         body: 'There has just been a new sighting reported in your area.',
+        sound: 'default',
         // icon: follower.photoURL
       }
     };
